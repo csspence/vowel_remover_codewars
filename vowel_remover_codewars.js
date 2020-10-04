@@ -8,4 +8,18 @@ Don't worry about uppercase vowels.
 */
 
 function shortcut(string){
+    let vowels = {
+        'a': true,
+        'e': true,
+        'i': true,
+        'o': true,
+        'u': true
+    }
+    let answer = '';
+    for(let i = 0; i < string.length; i++){
+        if(vowels[string[i]] !== true) {
+            answer += string[i];
+        }
+    }
+    return answer;
 }
